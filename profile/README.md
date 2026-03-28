@@ -1,6 +1,8 @@
 <div align="center">
 
-# 🐙 Octopus
+<img width="157" height="58" alt="image" src="https://github.com/user-attachments/assets/9ee742ca-910d-40c8-9d31-15dded61a28f" />
+
+
 
 ### AI-Powered Code Review & Codebase Intelligence
 

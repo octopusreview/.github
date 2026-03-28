@@ -7,8 +7,7 @@
 **Connect your repos. Get instant, context-aware PR reviews powered by AI.**
 
 [![Website](https://img.shields.io/badge/Website-octopus--review.ai-7c3aed?style=for-the-badge)](https://octopus-review.ai)
-[![CLI](https://img.shields.io/badge/CLI-npm-cb3837?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@octp/cli)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://github.com/octopus-review/octopus/blob/master/LICENSE)
+[![CLI](https://img.shields.io/badge/CLI-npm-cb3837?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@octp/cli) 
 
 </div>
 
@@ -36,4 +35,4 @@ Octopus is an AI-powered code review platform that deeply understands your codeb
 
 ## 🚀 Open Source & Self-Hostable
 
-Octopus is **MIT licensed** and fully self-hostable. Run it on your own infrastructure with complete control over your data.
+Octopus is **Modified MIT licensed** and fully self-hostable. Run it on your own infrastructure with complete control over your data.

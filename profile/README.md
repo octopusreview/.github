@@ -37,9 +37,3 @@ Octopus is an AI-powered code review platform that deeply understands your codeb
 ## 🚀 Open Source & Self-Hostable
 
 Octopus is **MIT licensed** and fully self-hostable. Run it on your own infrastructure with complete control over your data.
-
-<div align="center">
-
-**[📖 Documentation](https://octopus-review.ai/docs)** · **[🐙 Main Repo](https://github.com/octopus-review/octopus)** · **[📦 CLI on npm](https://www.npmjs.com/package/@octp/cli)**
-
-</div>

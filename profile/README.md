@@ -13,4 +13,4 @@
 
 ## What is Octopus?
 
-Octopus is an AI-powered code review platform that deeply understands your codebase. It indexes your repositories, builds semantic knowledge, and delivers intelligent PR reviews with actionable findings — directly as PR comments on GitHub and Bitbucket.
+Octopus is an AI-powered code review platform that deeply understands your codebase. It indexes your repositories, builds semantic knowledge, and delivers intelligent PR reviews with actionable findings, directly as PR comments on GitHub, Bitbucket and GitLab.

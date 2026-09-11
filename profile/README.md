@@ -2,9 +2,9 @@
   <img src="https://raw.githubusercontent.com/octopusreview/octopus/db9416d102d1ee145c69711e4abe6128c69694e9/apps/web/public/octopus-logo.png" width="72" alt="Octopus" />
 </p>
 
-# Give your AI the repo. Let it handle the setup.
+# Give your AI this prompt. Let it handle the rest.
 
-Share the prompt below with your coding agent. It can install `octp`, index your repository and run the analysis from your terminal, then use that context to work on your code.
+Paste the prompt below into the AI coding session you already use for your project. Your agent handles Octopus setup: installing `octp`, indexing the repository and running the analysis. It brings you the links for any approvals it needs along the way.
 
 Octopus reviews pull requests using indexed code, team standards and repository rules. Findings and suggested fixes appear in GitHub, GitLab and Bitbucket.
 
@@ -37,7 +37,7 @@ Ask me only when you need access or a decision you cannot infer.
 Report what completed and any remaining blocker.
 ```
 
-For example, when you open a new repo in Codex, give it this prompt and let it run the setup. The agent brings you the links for sign-in, GitHub App authorisation and repository access when needed. Complete the approval, then let it continue with indexing and analysis. You should not have to find settings pages or relay commands between tools.
+For example, paste this prompt into your existing Codex session and let it set up Octopus for the current project. The agent brings you the links for sign-in, GitHub App authorisation and repository access when needed. Complete the approval, then let it continue with indexing and analysis. You should not have to find settings pages or relay commands between tools.
 
 ## See the review, then the fix
 

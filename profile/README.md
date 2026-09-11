@@ -2,11 +2,42 @@
   <img src="https://raw.githubusercontent.com/octopusreview/octopus/db9416d102d1ee145c69711e4abe6128c69694e9/apps/web/public/octopus-logo.png" width="72" alt="Octopus" />
 </p>
 
-# Code review with your repository in context
+# Give your AI this prompt. Let it handle the rest.
 
-Octopus uses indexed code, team standards and repository rules to review pull requests. Get summaries, severity-ranked findings and suggested fixes in GitHub, GitLab and Bitbucket — then explore your codebase from the terminal.
+Paste the prompt below into the AI coding session you already use for your project. Your agent handles Octopus setup: installing `octp`, indexing the repository and running the analysis. It brings you the links for any approvals it needs along the way.
 
-**[Try Octopus Cloud](https://octopus-review.ai/login)** · **[Self-host Octopus](https://octopus-review.ai/docs/self-hosting)** · **[Install the CLI](#review-from-your-terminal)** · **[Read the docs](https://octopus-review.ai/docs)**
+Octopus reviews pull requests using indexed code, team standards and repository rules. Findings and suggested fixes appear in GitHub, GitLab and Bitbucket.
+
+**[Copy the AI prompt](#give-this-prompt-to-your-ai)** · **[Install the CLI](#review-from-your-terminal)** · **[Octopus Cloud](https://octopus-review.ai/login)** · **[Self-host](https://octopus-review.ai/docs/self-hosting)**
+
+## Give this prompt to your AI
+
+Paste this into Codex, Claude Code or another coding agent with terminal access, inside the repository you want to work on:
+
+```text
+Set up Octopus for this repository and use its CLI to do the work.
+
+Read https://octopus-review.ai/docs/cli for the current instructions.
+Install the standalone octp CLI for this machine if it is missing.
+Check octp --help and octp whoami, and use the existing account when available.
+If sign-in is needed, run octp login and give me its approval URL.
+Guide me through any required GitHub App installation, organisation
+authorisation and repository access. Use the setup URLs returned by octp;
+if a required link is not available, use the official setup guide.
+At each step, give me the exact link and the action I need to take.
+After I complete it, recheck access and continue from where you left off.
+
+Identify this repository from its git remote and check octp repo status.
+Use octp repo index to index it, wait for completion, then run octp repo analyze.
+Check the final status and summarise the architecture and any reported issues.
+
+Use octp commands for indexing, analysis and status checks instead of opening
+browser pages to click buttons. Complete each available step yourself.
+Ask me only when you need access or a decision you cannot infer.
+Report what completed and any remaining blocker.
+```
+
+For example, paste this prompt into your existing Codex session and let it set up Octopus for the current project. The agent brings you the links for sign-in, GitHub App authorisation and repository access when needed. Complete the approval, then let it continue with indexing and analysis. You should not have to find settings pages or relay commands between tools.
 
 ## See the review, then the fix
 
@@ -36,26 +67,26 @@ curl -fsSL https://octopus-review.ai/install.sh | bash
 irm https://octopus-review.ai/install.ps1 | iex
 ```
 
-Use the CLI to review changes and work with repository context. Follow the [CLI guide](https://octopus-review.ai/docs/cli) for authentication, commands and configuration, or [inspect the installer source](https://github.com/octopusreview/octopus/tree/master/apps/cli/install).
+From your repository directory, your agent can run:
+
+```bash
+octp whoami
+octp repo status
+octp repo index
+octp repo analyze
+octp repo status
+```
+
+To request a pull request review, use `octp review --pr <number-or-url>`.
+
+Follow the [CLI guide](https://octopus-review.ai/docs/cli) for authentication, commands and configuration, or [inspect the installer source](https://github.com/octopusreview/octopus/tree/master/apps/cli/install).
 
 ## Two ways to use Octopus
 
 | Octopus Cloud | Octopus Self-hosted |
 | --- | --- |
-| Managed hosting. Sign in, connect your code host and select repositories. | Run Octopus on your own infrastructure with Docker Compose and your chosen AI providers. |
+| Managed hosting for Octopus. Give your agent the setup prompt above. | Run Octopus on your own infrastructure with Docker Compose and your chosen AI providers. |
 | [Start with Cloud](https://octopus-review.ai/docs/getting-started) · [Pricing](https://octopus-review.ai/docs/pricing) | [Self-hosting guide](https://octopus-review.ai/docs/self-hosting) · [Source and license](https://github.com/octopusreview/octopus) |
-
-## From sign-in to your first review
-
-1. **Sign in to Cloud** and create your organisation.
-2. **Connect your code host** and choose the repositories to review.
-3. **Open a pull request or merge request.** Read the findings and suggested fixes in your code host.
-
-<p align="center">
-  <a href="https://octopus-review.ai/login"><img src="https://raw.githubusercontent.com/octopusreview/octopus/db9416d102d1ee145c69711e4abe6128c69694e9/docs/screenshots/cloud-sign-in.png" width="400" alt="Octopus Cloud sign-in with Google, GitHub, Microsoft or an email magic link" /></a>
-</p>
-
-*The real Cloud sign-in screen, captured 11 September 2026. Follow the [Cloud quickstart](https://octopus-review.ai/docs/getting-started) or [self-hosting guide](https://octopus-review.ai/docs/self-hosting) for complete setup.*
 
 ## Built around your team's code
 

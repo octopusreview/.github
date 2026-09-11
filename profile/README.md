@@ -2,15 +2,41 @@
   <img src="https://raw.githubusercontent.com/octopusreview/octopus/db9416d102d1ee145c69711e4abe6128c69694e9/apps/web/public/octopus-logo.png" width="72" alt="Octopus" />
 </p>
 
-# AI code review, right in your pull requests
+# Code review with your repository in context
 
-Octopus brings review summaries, severity-ranked findings and suggested fixes to GitHub, GitLab and Bitbucket. Give your team a clearer starting point for every review.
+Octopus uses indexed code, team standards and repository rules to review pull requests. Get summaries, severity-ranked findings and suggested fixes in GitHub, GitLab and Bitbucket — then explore your codebase from the terminal.
 
-**[Try Octopus Cloud](https://octopus-review.ai/login)** · **[Self-host Octopus](https://octopus-review.ai/docs/self-hosting)** · **[Read the docs](https://octopus-review.ai/docs)**
+**[Try Octopus Cloud](https://octopus-review.ai/login)** · **[Self-host Octopus](https://octopus-review.ai/docs/self-hosting)** · **[Install the CLI](#review-from-your-terminal)** · **[Read the docs](https://octopus-review.ai/docs)**
+
+## See the review, then the fix
 
 [![An Octopus inline review showing the finding, explanation and suggested code change](https://raw.githubusercontent.com/octopusreview/octopus/db9416d102d1ee145c69711e4abe6128c69694e9/docs/screenshots/pr-finding.png)](https://github.com/octopusreview/octopus/pull/744#discussion_r3775719896)
 
 *A real review from [public PR #744](https://github.com/octopusreview/octopus/pull/744#discussion_r3775719896), with the [fix confirmed by the author](https://github.com/octopusreview/octopus/pull/744#discussion_r3775726260). Screenshot captured 11 September 2026.*
+
+### Scores with the reasoning attached
+
+[![Octopus review category scores with notes explaining each score and an overall score of 4 out of 5](https://raw.githubusercontent.com/octopusreview/.github/main/profile/images/review-scores.png)](https://github.com/octopusreview/octopus/pull/744#issuecomment-5281010601)
+
+*Category scores from the same [public review](https://github.com/octopusreview/octopus/pull/744#issuecomment-5281010601), captured 11 September 2026.*
+
+## Review from your terminal
+
+Install the standalone `octp` binary for macOS, Linux or Windows. No Node.js or npm installation required.
+
+**macOS / Linux**
+
+```bash
+curl -fsSL https://octopus-review.ai/install.sh | bash
+```
+
+**Windows (PowerShell)**
+
+```powershell
+irm https://octopus-review.ai/install.ps1 | iex
+```
+
+Use the CLI to review changes and work with repository context. Follow the [CLI guide](https://octopus-review.ai/docs/cli) for authentication, commands and configuration, or [inspect the installer source](https://github.com/octopusreview/octopus/tree/master/apps/cli/install).
 
 ## Two ways to use Octopus
 

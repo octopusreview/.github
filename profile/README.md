@@ -16,7 +16,7 @@ Octopus uses indexed code, team standards and repository rules to review pull re
 
 ### Scores with the reasoning attached
 
-[![Octopus review category scores with notes explaining each score and an overall score of 4 out of 5](https://raw.githubusercontent.com/octopusreview/.github/main/profile/images/review-scores.png)](https://github.com/octopusreview/octopus/pull/744#issuecomment-5281010601)
+[![Octopus review category scores with notes explaining each score and an overall score of 4 out of 5](https://raw.githubusercontent.com/octopusreview/.github/6860715ee2af85f2de7f73476196df4910c24f40/profile/images/review-scores.png)](https://github.com/octopusreview/octopus/pull/744#issuecomment-5281010601)
 
 *Category scores from the same [public review](https://github.com/octopusreview/octopus/pull/744#issuecomment-5281010601), captured 11 September 2026.*
 

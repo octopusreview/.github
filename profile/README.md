@@ -6,7 +6,9 @@
 
 Paste the prompt below into the AI coding session you already use for your project. Your agent handles Octopus setup: installing `octp`, indexing the repository and running the analysis. It brings you the links for any approvals it needs along the way.
 
-Octopus reviews pull requests using indexed code, team standards and repository rules. Findings and suggested fixes appear in GitHub, GitLab and Bitbucket.
+Octopus reviews pull requests using indexed code, team standards and repository rules. Findings and suggested fixes appear in GitHub, GitLab, Bitbucket and Forgejo.
+
+For Forgejo, [choose your connection](https://octopus-review.ai/docs/integrations#forgejo): Octopus Cloud with public HTTPS, Octopus Cloud with a local connector for private LAN/VPN access, or self-hosted Octopus with direct network access. Both Cloud options send code and review context to Octopus Cloud and your configured AI services. The native agent setup below is for GitHub repositories.
 
 **[Copy the AI prompt](#give-this-prompt-to-your-ai)** · **[Install the CLI](#review-from-your-terminal)** · **[Octopus Cloud](https://octopus-review.ai/login)** · **[Self-host](https://octopus-review.ai/docs/self-hosting)**
 
